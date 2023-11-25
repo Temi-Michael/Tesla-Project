@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&family=Playpen+Sans&family=Sedgwick+Ave+Display&family=Ysabeau+Infant:ital@1&display=swap');
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,4 +8,21 @@
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+    @apply flex items-center justify-between w-full top-0 z-10 h-[5.4rem] p-[3.2rem];
+}
+
+.nav_link {
+    @apply text-2xl font-semibold text-[#181b21] mx-[0.8rem] px-[0.8rem] py-[0.4rem] rounded-[0.8rem] bg-transparent hover:bg-[#181b21] hover:bg-opacity-10 transition-all duration-300;
+}
+
+.car_section {
+    @apply w-full h-screen;
+}
+
+.car_img {
+    @apply w-full h-full object-cover;
 }

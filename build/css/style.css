@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&family=Playpen+Sans&family=Sedgwick+Ave+Display&family=Ysabeau+Infant:ital@1&display=swap');
+
 /*
 ! tailwindcss v3.3.5 | MIT License | https://tailwindcss.com
 */
@@ -434,7 +436,7 @@ video {
   display: none;
 }
 
-*, ::before, ::after {
+*, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -484,7 +486,7 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-::backdrop {
+::backdrop{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -532,9 +534,61 @@ video {
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
+}
+
+.h-6{
+  height: 1.5rem;
 }
 
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar{
+  top: 0px;
+  z-index: 10;
+  display: flex;
+  height: 5.4rem;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3.2rem;
+}
+
+.nav_link{
+  margin-left: 0.8rem;
+  margin-right: 0.8rem;
+  border-radius: 0.8rem;
+  background-color: transparent;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(24 27 33 / var(--tw-text-opacity));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.nav_link:hover{
+  background-color: rgb(24 27 33 / var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.1;
+}
+
+.car_section{
+  height: 100vh;
+  width: 100%;
+}
+
+.car_img{
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
