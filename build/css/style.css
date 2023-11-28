@@ -536,8 +536,20 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.hidden{
+  display: none;
+}
+
 .h-6{
   height: 1.5rem;
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}
+
+.underline{
+  text-decoration-line: underline;
 }
 
 html {
@@ -547,6 +559,7 @@ html {
 }
 
 .navbar{
+  position: fixed;
   top: 0px;
   z-index: 10;
   display: flex;
@@ -582,6 +595,7 @@ html {
 }
 
 .car_section{
+  position: relative;
   height: 100vh;
   width: 100%;
 }
@@ -591,4 +605,103 @@ html {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.car_details{
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  text-align: center;
+}
+
+.transform_50 {
+  transform: translate(-50%, -50%);
+}
+
+.model_name{
+  font-size: 4rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(57 60 65 / var(--tw-text-opacity));
+}
+
+.tag_line{
+  font-size: 1.5rem;
+  line-height: 2rem;
+  --tw-text-opacity: 1;
+  color: rgb(76 77 81 / var(--tw-text-opacity));
+}
+
+.car_buttons{
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 1024px){
+  .car_buttons{
+    flex-direction: row;
+  }
+}
+
+.btn{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  height: 4rem;
+  width: 25.5.5rem;
+  border-radius: 3.2rem;
+  background-color: rgb(23 26 32 / var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.8;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.inventory{
+  margin-left: 2rem;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.6;
+  --tw-text-opacity: 1;
+  color: rgb(57 60 65 / var(--tw-text-opacity));
+}
+
+.down_svg{
+  position: absolute;
+  top: 93%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  height: 5rem;
+  width: 100%;
+}
+
+@keyframes bounce{
+  0%, 100%{
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8,0,1,1);
+  }
+
+  50%{
+    transform: none;
+    animation-timing-function: cubic-bezier(0,0,0.2,1);
+  }
+}
+
+.down_svg{
+  animation: bounce 1s infinite;
+}
+
+@media (min-width: 1024px){
+  .lg\:block{
+    display: block;
+  }
 }
